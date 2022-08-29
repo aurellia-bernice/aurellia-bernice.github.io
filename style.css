@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --paleblue: hsl(225,100%,94%);
+    --brightblue: hsl(245,75%,52%);
+    --verypaleblue: hsl(225,100%,98%);
+    --desaturatedblue: hsl(224,23%,55%);
+    --darkblue: hsl(223,47%,23%);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-size: 16px;
+    background-color: var(--paleblue);
+    font-family: 'Outfit', sans-serif;
+    
+}
+body{
+    height: 70vh;
+    width: 100%;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+}
+.container{
+    background-color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    width: 100%;
+    max-width: 23.438rem;
+    border-radius: 1rem;
+}
+.picture img{ 
+   border-top-right-radius:1rem;
+    border-top-left-radius: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 23.438rem;
+}
+.text{
+    padding: 1.5rem;  
+    text-align: center;
+}
+.text .order{
+    font-size: 1.5rem;
+    color: var(--darkblue);
+    font-size: 900;
+    margin: 1rem 0;
+}
+
+.text .info{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--desaturatedblue);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    
+}
+
+
+.proceed{
+    border-radius: 1rem;
+    font-weight: 700;
+    background-color: var(--brightblue);
+    color: white;
+    text-align: center;
+    box-sizing:content-box;
+    box-shadow:2px;
+    padding: 1rem;
+    box-shadow: 0px 5px 5px rgba(0, 0,0, 0.2);
+    margin-bottom: .6rem;
+}
+.proceed:hover{
+     background-color: hsl(245,75%,65%);
+}
+.cancel{
+    text-align: center;
+    color:var(--desaturatedblue);
+    font-weight:700;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.cancel:hover{
+    color: var(--darkblue);
+}
+.change{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.change a{
+    font-weight: 700;
+    font-size: .9rem;
+    color: var(--brightblue);
+}
+.change a:hover{
+    text-decoration: none;
+    color: hsl(245,75%,65%);;
+}
+.annual{
+    margin-bottom: .2rem;
+    font-weight: 700;
+    color: var(--darkblue);
+}
+
+.text_icon{
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+    margin-right: 15px;
+}
+.price{
+    font-weight: 500;
+    color: var(--desaturatedblue);
+    font-size: 1rem;
+}
+.annualplanbox{
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--verypaleblue);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 375px) {
+    body{
+        height: 100vh;
+        background: url("images/pattern-background-mobile.svg") no-repeat;
+        width: 100%;
+        background-size: contain;
+        background-position: top;
+
+    }
+    .container{
+        max-width: 350px;
+        width: 100%;
+    }
+    .text{
+        padding: 1rem;
+    }
+}
